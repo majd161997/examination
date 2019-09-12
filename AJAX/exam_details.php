@@ -60,7 +60,6 @@ $(document).ready(function(){
         $("#status_text").text("Published");
         $("#publish_btn").text("Unpublish");
     }
-
     $("#edit_exam_btn").click(function(){
         $.ajax({
             url: "/AJAX/edit_exam.php",
