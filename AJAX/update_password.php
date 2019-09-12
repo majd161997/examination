@@ -11,6 +11,7 @@
         echo -1;
         return;
     }
+
     $update_password = mysqli_query($connect, "UPDATE accounts SET Password='$new_password' WHERE id='$id'");
     echo 0;
 ?>
