@@ -11,9 +11,7 @@
 </div>
 <script>
 $(document).ready(function(){
-
     var question_num = 0;
-
     var switchToInput = function ()
     {
         var $input = $("<textarea>", {
