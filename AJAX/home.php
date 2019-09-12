@@ -29,7 +29,6 @@
 ?>
 <script>
 $(document).ready(function(){
-    
     $(".publisher_name").click(function(){
         var pid = $(this).attr('id');
         $.ajax({
@@ -47,7 +46,6 @@ $(document).ready(function(){
             }
         });
     });
-
     $(".preview_exam_btn").click(function(){
         var exam_id = $(this).closest('.exam').attr('id');
         $.ajax({
@@ -65,6 +63,5 @@ $(document).ready(function(){
             }
         });
     });
-
 });
 </script>
