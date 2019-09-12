@@ -19,7 +19,6 @@
             <span class="warning_msg" id="profile_warning_msg"></span>
         </div>
     </div>
-
     <div class="settings_section"> <!-- Email -->
         <div class="left">
             <span id="settings_subtitle">Email<span>
@@ -30,7 +29,6 @@
             <span class="warning_msg" id="email_warning_msg"></span>
         </div>
     </div>
-
     <div class="settings_section"> <!-- Password -->
         <div class="left">
             <span id="settings_subtitle">Password<span>
@@ -48,18 +46,14 @@
             </form>
         </div>
     </div>
-
 </div>
 <script>
 $(document).ready(function(){
-
     $("form").submit(function(e){
         e.preventDefault();
     });
-
     var last_firstname = $("#fname_input").val();
     var last_lastname= $("#lname_input").val();
-    
     $("#fname_input").change(function(){
         if($(this).val() == "")
         {
@@ -88,7 +82,6 @@ $(document).ready(function(){
             });
         }
     });
-
     $("#lname_input").change(function(){
         if($(this).val() == "")
         {
@@ -99,7 +92,6 @@ $(document).ready(function(){
         {
             var lastname = $(this).val();
             var firstname = $("#fname_input").val();
-
             last_lastname = lastname;
             $.ajax({
                 url: "/AJAX/update_lastname.php",
@@ -117,7 +109,6 @@ $(document).ready(function(){
             });
         }
     });
-
     $("#email_input").change(function(){
         if($(this).val() == "")
         {
@@ -142,7 +133,6 @@ $(document).ready(function(){
             });
         }
     });
-
     $("#password_change_btn").click(function(){
         if($("#old_pass_input").val() == "" || $("#new_pass_input").val() == "" || $("#confirm_new_pass_input").val() == "")
         {
@@ -200,6 +190,5 @@ $(document).ready(function(){
             }
         }
     });
-
 });
 </script>
