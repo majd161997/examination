@@ -5,6 +5,7 @@
     $lname = mysqli_real_escape_string($connect, $_POST['lname']);
     $email = mysqli_real_escape_string($connect, $_POST['email']);
     $password = mysqli_real_escape_string($connect, $_POST['password']);
+
     if($fname == null || $lname == null || $email == null || $password == null)
     {
         echo 'Please fill out all fields.';
