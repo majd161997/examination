@@ -13,7 +13,6 @@
 $(document).ready(function(){
 
     var exam_id = <?php echo $_GET['exam_id']; ?>;
-
     $.ajax({
         url: "/AJAX/get_exam.php",
         cache: false,
