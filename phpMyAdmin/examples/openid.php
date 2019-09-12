@@ -19,7 +19,6 @@
 if (false === @include_once 'OpenID/RelyingParty.php') {
     exit;
 }
-
 /**
  * Map of authenticated users to MySQL user/password pairs.
  */
